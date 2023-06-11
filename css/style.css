@@ -651,13 +651,15 @@ header {
     min-height: 800px;
 }
 .deposit_calc {
-    display: flex;
-    justify-content: space-between;
+    
     padding-bottom: 3rem;
     border-radius: 32px;
     max-width: 1110px;
     min-height: 500px;
     background-color: #f9f9f9;
+}
+.flex {
+    display: flex;
 }
 .dep_left_col h2 {
     font-size: 46px;
@@ -668,29 +670,13 @@ header {
 }
 .dep_wrapper {
     display: flex;
-    justify-content: space-between;
+    gap: 8rem;
     padding-left: 64px;
     padding-top: 72px;
 }
 .calc_block {
     margin-top: 20px;
 }
-/* .card_picker {
-    width: 377px;
-    height: 59px;
-    background-color: #fff;
-    border-radius: 10px;
-    border-color: #dfcee9;
-}
-.card_picker option{
-    background: #fa5255;
-    width: 377px;
-    height: 59px;
-}
-.card_picker option:active{
-    background: #fa5255;
-    color: white;
-} */
 
 
 * {
@@ -784,3 +770,11 @@ select {
 .dep_left_col {
     
 }
+.divider {
+    content: '';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 1px solid black;
+  }
