@@ -645,14 +645,12 @@ header {
     grid-template-columns: 2fr 2fr;
 }
 .deposit_sec {
-    padding: 71px 0 71px;
+    padding: 71px 0 0px;
     background: linear-gradient(0deg,#865be8,#865be8),linear-gradient(201.52deg,#58a1f3 0,#0f5fb9);
     width: 100%;
     min-height: 800px;
 }
 .deposit_calc {
-    
-    padding-bottom: 3rem;
     border-radius: 32px;
     max-width: 1110px;
     min-height: 500px;
@@ -672,12 +670,14 @@ header {
     display: flex;
     gap: 8rem;
     padding-left: 64px;
-    padding-top: 72px;
+    
 }
 .calc_block {
     margin-top: 20px;
 }
-
+.dep_left_col {
+    padding-top: 72px;
+}
 
 * {
 	outline: none;
@@ -767,14 +767,31 @@ select {
     color: #ccc;
     margin-left: 7rem;
 }
-.dep_left_col {
+.right_col_wrap {
+    width: 451px;
     
 }
 .divider {
-    content: '';
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-left: 1px solid black;
+    background: 0 0;
+    border: none;
+    border-top: 1px solid #e7e7e7;
   }
+ ._label {
+    font-family: Lato, sans-serif;
+    font-size: 14px;
+    color: #878787;
+    padding-top: 10px;
+}
+.min_pay {
+    max-width: 625px;
+    font-size: 16px;
+    color: #000;
+    font-family: Lato, sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+}
+.dep_right_col {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 591px;
+}
